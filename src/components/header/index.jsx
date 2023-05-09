@@ -1,12 +1,13 @@
 import { Text, View } from "react-native";
 
-import { Header } from "./components";
 import { styles } from "./styles";
 
-export default function App() {
+const Header = ({ title }) => {
   return (
     <View style={styles.container}>
-      <Header title="Welcome" />
+      <Text style={styles.title}>{title}</Text>
     </View>
   );
-}
+};
+
+export default Header;

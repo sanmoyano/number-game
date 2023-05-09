@@ -1,12 +1,13 @@
 import { Text, View } from "react-native";
 
-import { Header } from "./components";
 import { styles } from "./styles";
 
-export default function App() {
+const GameOver = () => {
   return (
     <View style={styles.container}>
-      <Header title="Welcome" />
+      <Text>Game Over</Text>
     </View>
   );
-}
+};
+
+export default GameOver;
