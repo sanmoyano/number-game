@@ -15,7 +15,8 @@ export const styles = StyleSheet.create({
     marginHorizontal: 20,
   },
   title: {
-    fontSize: 20,
+    fontSize: 18,
+    fontFamily: 'Quicksand-Bold',
   },
   buttonContainer: {
     width: '100%',

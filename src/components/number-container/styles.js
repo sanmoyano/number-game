@@ -14,8 +14,9 @@ export const styles = StyleSheet.create({
     marginVertical: 10,
   },
   number: {
-    fontSize: 20,
-    fontWeight: 'bold',
+    fontSize: 30,
     color: theme.colors.black,
+    fontFamily: 'Quicksand-Bold',
+    textAlign: 'center',
   },
 });

@@ -8,10 +8,11 @@ export const styles = StyleSheet.create({
     backgroundColor: theme.colors.white,
   },
   title: {
-    fontSize: 16,
+    fontSize: 18,
     color: theme.colors.black,
     textAlign: 'center',
     paddingVertical: 20,
+    fontFamily: 'Quicksand-Bold',
   },
   inputContainer: {
     justifyContent: 'center',
@@ -19,10 +20,11 @@ export const styles = StyleSheet.create({
     marginHorizontal: 20,
   },
   label: {
-    fontSize: 14,
+    fontSize: 16,
     color: theme.colors.black,
     paddingVertical: 5,
     textAlign: 'center',
+    fontFamily: 'Quicksand-Medium',
   },
   input: {
     borderBottomColor: theme.colors.secondary,
@@ -48,5 +50,5 @@ export const styles = StyleSheet.create({
     marginVertical: 40,
     marginHorizontal: 20,
   },
-  confirmedTitle: { fontSize: 16 },
+  confirmedTitle: { fontSize: 16, fontFamily: 'Quicksand-Medium' },
 });
