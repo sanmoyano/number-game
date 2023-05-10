@@ -1,6 +1,8 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
 
 import { theme } from '../../constants';
+
+const { height } = Dimensions.get('window');
 
 export const styles = StyleSheet.create({
   container: {
@@ -9,9 +11,9 @@ export const styles = StyleSheet.create({
     paddingVertical: 30,
   },
   content: {
-    height: 200,
+    height: height * 0.3,
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'space-between',
     marginHorizontal: 20,
   },
   title: {
@@ -22,5 +24,8 @@ export const styles = StyleSheet.create({
     width: '100%',
     flexDirection: 'row',
     justifyContent: 'space-around',
+  },
+  button: {
+    width: 90,
   },
 });

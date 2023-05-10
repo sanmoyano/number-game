@@ -1,6 +1,8 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
 
 import { theme } from '../../constants';
+
+const { height } = Dimensions.get('window');
 
 export const styles = StyleSheet.create({
   container: {
@@ -15,9 +17,10 @@ export const styles = StyleSheet.create({
     fontFamily: 'Quicksand-Bold',
   },
   inputContainer: {
-    justifyContent: 'center',
+    justifyContent: 'space-between',
     alignItems: 'center',
     marginHorizontal: 20,
+    height: height * 0.3,
   },
   label: {
     fontSize: 16,
@@ -44,8 +47,8 @@ export const styles = StyleSheet.create({
     width: 100,
   },
   confirmedContainer: {
-    height: 160,
-    justifyContent: 'center',
+    height: height * 0.3,
+    justifyContent: 'space-between',
     alignItems: 'center',
     marginVertical: 40,
     marginHorizontal: 20,
