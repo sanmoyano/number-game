@@ -19,7 +19,7 @@ const GameInit = ({ onGameStart }) => {
   const [selectedNumber, setSelectedNumber] = useState(null);
 
   const onHandlerChangeText = (text) => {
-    setNumberOption(text.replace(/[^0-9]/g, '')); //text -> si text no es un numero lo reemplazo por un campo vacio.
+    setNumberOption(text.replace(/[^0-9]/g, '')); //-> si text no es un numero lo reemplazo por un campo vacio.
   };
 
   const onHandlerConfirm = () => {

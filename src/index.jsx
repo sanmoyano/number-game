@@ -13,7 +13,8 @@ export default function App() {
     setUserNumber(number);
   };
 
-  const Content = () => (userNumber ? <GamePlay /> : <GameInit onGameStart={onGameStart} />);
+  const Content = () =>
+    userNumber ? <GamePlay userNumber={userNumber} /> : <GameInit onGameStart={onGameStart} />;
 
   return (
     <View style={styles.container}>
